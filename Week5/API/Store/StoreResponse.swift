@@ -7,6 +7,7 @@ import Foundation
 
 // MARK: - Welcome
 struct StoreResponse: Codable {
+    
     let crtfcUpsoInfo: CrtfcUpsoInfo
 
     enum CodingKeys: String, CodingKey {
@@ -51,14 +52,18 @@ struct Row: Codable {
 //    let crtfcYmd: String
 //    let useYn, mapIndictYn: Yn
     let yDnts, xCnts: String
-//    let rdnDetailAddr, rdnAddrCode, rdnCodeNm, bizcndCode: String
+//    let rdnDetailAddr: String
+//    let rdnAddrCode,
+    let rdnCodeNm: String
+//    let bizcndCode: String
 //    let cobCode, crtfcSno: String
 //    let crtTime: Time
 //    let crtUSR: CRT
 //    let updTime: Time
 //    let foodMenu, gntNo: String
 //    let crtfcYn: CrtfcYn
-
+    let telNo : String
+    
     enum CodingKeys: String, CodingKey {
 //        case crtfcUpsoMgtSno = "CRTFC_UPSO_MGT_SNO"
 //        case upsoSno = "UPSO_SNO"
@@ -78,10 +83,10 @@ struct Row: Codable {
 //        case crtfcClass = "CRTFC_CLASS"
         case yDnts = "Y_DNTS"
         case xCnts = "X_CNTS"
-//        case telNo = "TEL_NO"
+        case telNo = "TEL_NO"
 //        case rdnDetailAddr = "RDN_DETAIL_ADDR"
 //        case rdnAddrCode = "RDN_ADDR_CODE"
-//        case rdnCodeNm
+        case rdnCodeNm = "RDN_CODE_NM"
 //        case bizcndCode
 //        case cobCode
 //        case crtfcSno

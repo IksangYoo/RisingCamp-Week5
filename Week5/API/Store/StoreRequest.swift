@@ -8,14 +8,17 @@
 import Foundation
 import Alamofire
 
+protocol StoreRequestProtocol {
+    func retrieveStore(storeResponse: StoreResponse)
+}
+
 class StoreRequest {
     
-    func getStoreData(_ viewController: StoreListViewController) {
+    var delegate: StoreRequestProtocol?
+    
+    func getStoreData() {
         
         let url = "http://openapi.seoul.go.kr:8088/5a49784b63616e6439375659465477/json/CrtfcUpsoInfo/0/999"
-        let params: Parameters = [
-            "CGG_CODE_NM" : "강남구"
-        ]
         let header : HTTPHeaders = ["Content-Type": "application/json"]
         
         let request = AF.request(url,
@@ -24,7 +27,9 @@ class StoreRequest {
         request.responseDecodable(of: StoreResponse.self) { response in
             switch response.result {
             case .success(let result):
-                viewController.didSuccess(result)
+                DispatchQueue.main.async {
+                    self.delegate?.retrieveStore(storeResponse: result)
+                }
             case .failure(let error):
                 print("Error Occured: \(error)")
             }
