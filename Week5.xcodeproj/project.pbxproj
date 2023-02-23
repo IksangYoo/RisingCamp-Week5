@@ -49,6 +49,7 @@
 		DD1726EB29A7320E00596FB0 /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1726CF29A7320E00596FB0 /* map_pin_shadow.png */; };
 		DD1726EC29A7320E00596FB0 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1726D029A7320E00596FB0 /* DaumMap.framework */; };
 		DD1726F029A74CF800596FB0 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1726EF29A74CF800596FB0 /* Metal.framework */; };
+		DD3E341329A75AF200122E2D /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E341229A75AF200122E2D /* NaviViewController.swift */; };
 		DDDE6DC429A46D32003EE4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDE6DC329A46D32003EE4D9 /* AppDelegate.swift */; };
 		DDDE6DC629A46D32003EE4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDE6DC529A46D32003EE4D9 /* SceneDelegate.swift */; };
 		DDDE6DCB29A46D32003EE4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDE6DC929A46D32003EE4D9 /* Main.storyboard */; };
@@ -113,6 +114,7 @@
 		DD1726CF29A7320E00596FB0 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		DD1726D029A7320E00596FB0 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		DD1726EF29A74CF800596FB0 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		DD3E341229A75AF200122E2D /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
 		DDDE6DC029A46D32003EE4D9 /* Week5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDE6DC329A46D32003EE4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDE6DC529A46D32003EE4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				DDDE6DC329A46D32003EE4D9 /* AppDelegate.swift */,
 				DDDE6DC529A46D32003EE4D9 /* SceneDelegate.swift */,
 				DD17268A29A61A6300596FB0 /* MapViewController.swift */,
+				DD3E341229A75AF200122E2D /* NaviViewController.swift */,
 				DDDE6DC929A46D32003EE4D9 /* Main.storyboard */,
 				DDDE6DCC29A46D33003EE4D9 /* Assets.xcassets */,
 				DDDE6DCE29A46D33003EE4D9 /* LaunchScreen.storyboard */,
@@ -441,6 +444,7 @@
 				DD17269529A61F9D00596FB0 /* GwanAkViewController.swift in Sources */,
 				DDDE6DE129A4C8A7003EE4D9 /* StoreListViewController.swift in Sources */,
 				DD17269329A61F9000596FB0 /* GangBookViewController.swift in Sources */,
+				DD3E341329A75AF200122E2D /* NaviViewController.swift in Sources */,
 				DDDE6DC429A46D32003EE4D9 /* AppDelegate.swift in Sources */,
 				DD17268929A6132000596FB0 /* Store.swift in Sources */,
 				DDDE6DC629A46D32003EE4D9 /* SceneDelegate.swift in Sources */,
@@ -607,6 +611,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -644,6 +649,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

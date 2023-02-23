@@ -33,9 +33,11 @@ class MapViewController: UIViewController,MTMapViewDelegate {
             item.itemName = store.name!
             item.mapPoint = MTMapPoint(geoCoord: (MTMapPointGeo(latitude: store.y!, longitude: store.x!)))
             item.markerType = .bluePin
+            item.markerSelectedType = .redPin
             items.append(item)
+            
         }
-
+        
         mapView.addPOIItems(items)
     }
 }

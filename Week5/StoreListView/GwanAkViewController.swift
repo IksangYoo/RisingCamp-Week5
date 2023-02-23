@@ -42,6 +42,13 @@ extension GwanAkViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let naviVC = self.storyboard?.instantiateViewController(withIdentifier: "NaviVC") as? NaviViewController else {return}
+        naviVC.store = storeList.gwanAkStores![indexPath.row]
+        self.present(naviVC, animated: true)
+        print(storeList.gangNamStores![indexPath.row].name!)
+    }
 }
 
 extension GwanAkViewController: StoreRequestProtocol {

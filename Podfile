@@ -6,4 +6,6 @@ target 'Week5' do
   use_frameworks!
 pod 'Tabman', '~> 3.0'
 pod 'Alamofire'
+pod 'KakaoSDKNavi'
+pod 'KakaoSDKUser'
 end

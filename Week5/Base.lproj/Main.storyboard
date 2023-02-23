@@ -39,6 +39,21 @@
             </objects>
             <point key="canvasLocation" x="1858.7786259541983" y="-41.549295774647888"/>
         </scene>
+        <!--Navi View Controller-->
+        <scene sceneID="Vpx-4U-WIQ">
+            <objects>
+                <viewController storyboardIdentifier="NaviVC" id="vog-HA-o78" customClass="NaviViewController" customModule="Week5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46J-iV-L9v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cB0-zH-UI7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7C-aK-sHJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3257" y="-42"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="Sj3-md-ZmG">
             <objects>

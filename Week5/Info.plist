@@ -2,10 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
 	<key>KAKAO_APP_KEY</key>
 	<string>062ff6db042f1b19ffbbed70bab93c54</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakaokompassauth</string>
+		<string>kakaolink</string>
+		<string>kakaonavi-sdk</string>
+	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -30,5 +34,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UILaunchImageFile</key>
+	<string></string>
 </dict>
 </plist>
