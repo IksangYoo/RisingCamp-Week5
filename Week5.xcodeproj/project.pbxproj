@@ -50,6 +50,10 @@
 		DD1726EC29A7320E00596FB0 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1726D029A7320E00596FB0 /* DaumMap.framework */; };
 		DD1726F029A74CF800596FB0 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1726EF29A74CF800596FB0 /* Metal.framework */; };
 		DD3E341329A75AF200122E2D /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E341229A75AF200122E2D /* NaviViewController.swift */; };
+		DD6480D429A88CD30013C7E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6480D329A88CD30013C7E9 /* LoginViewController.swift */; };
+		DD6480D729A8989A0013C7E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6480D629A8989A0013C7E9 /* User.swift */; };
+		DD6480D929A89AA50013C7E9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6480D829A89AA50013C7E9 /* ProfileViewController.swift */; };
+		DD6480DC29A8A3DE0013C7E9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DD6480DB29A8A3DE0013C7E9 /* Kingfisher */; };
 		DDDE6DC429A46D32003EE4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDE6DC329A46D32003EE4D9 /* AppDelegate.swift */; };
 		DDDE6DC629A46D32003EE4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDE6DC529A46D32003EE4D9 /* SceneDelegate.swift */; };
 		DDDE6DCB29A46D32003EE4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDE6DC929A46D32003EE4D9 /* Main.storyboard */; };
@@ -115,6 +119,9 @@
 		DD1726D029A7320E00596FB0 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		DD1726EF29A74CF800596FB0 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		DD3E341229A75AF200122E2D /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
+		DD6480D329A88CD30013C7E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD6480D629A8989A0013C7E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DD6480D829A89AA50013C7E9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DDDE6DC029A46D32003EE4D9 /* Week5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDE6DC329A46D32003EE4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDE6DC529A46D32003EE4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +147,7 @@
 				DD1726EC29A7320E00596FB0 /* DaumMap.framework in Frameworks */,
 				DD1726A529A72EC300596FB0 /* libxml2.tbd in Frameworks */,
 				DD17269D29A72E6500596FB0 /* SystemConfiguration.framework in Frameworks */,
+				DD6480DC29A8A3DE0013C7E9 /* Kingfisher in Frameworks */,
 				DD17269B29A72E5C00596FB0 /* OpenGLES.framework in Frameworks */,
 				DB050920D28A2A4B83632F7B /* Pods_Week5.framework in Frameworks */,
 			);
@@ -244,6 +252,14 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		DD6480D529A8988C0013C7E9 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DD6480D629A8989A0013C7E9 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		DDDE6DB729A46D32003EE4D9 = {
 			isa = PBXGroup;
 			children = (
@@ -265,12 +281,15 @@
 		DDDE6DC229A46D32003EE4D9 /* Week5 */ = {
 			isa = PBXGroup;
 			children = (
+				DD6480D529A8988C0013C7E9 /* User */,
 				DDDE6DDA29A4A53F003EE4D9 /* API */,
 				DD17268F29A61F5400596FB0 /* StoreListView */,
-				DDDE6DC329A46D32003EE4D9 /* AppDelegate.swift */,
-				DDDE6DC529A46D32003EE4D9 /* SceneDelegate.swift */,
 				DD17268A29A61A6300596FB0 /* MapViewController.swift */,
 				DD3E341229A75AF200122E2D /* NaviViewController.swift */,
+				DD6480D329A88CD30013C7E9 /* LoginViewController.swift */,
+				DD6480D829A89AA50013C7E9 /* ProfileViewController.swift */,
+				DDDE6DC329A46D32003EE4D9 /* AppDelegate.swift */,
+				DDDE6DC529A46D32003EE4D9 /* SceneDelegate.swift */,
 				DDDE6DC929A46D32003EE4D9 /* Main.storyboard */,
 				DDDE6DCC29A46D33003EE4D9 /* Assets.xcassets */,
 				DDDE6DCE29A46D33003EE4D9 /* LaunchScreen.storyboard */,
@@ -316,6 +335,9 @@
 			dependencies = (
 			);
 			name = Week5;
+			packageProductDependencies = (
+				DD6480DB29A8A3DE0013C7E9 /* Kingfisher */,
+			);
 			productName = Week5;
 			productReference = DDDE6DC029A46D32003EE4D9 /* Week5.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +366,9 @@
 				Base,
 			);
 			mainGroup = DDDE6DB729A46D32003EE4D9;
+			packageReferences = (
+				DD6480DA29A8A3DE0013C7E9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DDDE6DC129A46D32003EE4D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,8 +465,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6480D729A8989A0013C7E9 /* User.swift in Sources */,
+				DD6480D429A88CD30013C7E9 /* LoginViewController.swift in Sources */,
 				DDDE6DDF29A4A803003EE4D9 /* StoreResponse.swift in Sources */,
 				DD17269529A61F9D00596FB0 /* GwanAkViewController.swift in Sources */,
+				DD6480D929A89AA50013C7E9 /* ProfileViewController.swift in Sources */,
 				DDDE6DE129A4C8A7003EE4D9 /* StoreListViewController.swift in Sources */,
 				DD17269329A61F9000596FB0 /* GangBookViewController.swift in Sources */,
 				DD3E341329A75AF200122E2D /* NaviViewController.swift in Sources */,
@@ -688,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD6480DA29A8A3DE0013C7E9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD6480DB29A8A3DE0013C7E9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD6480DA29A8A3DE0013C7E9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDDE6DB829A46D32003EE4D9 /* Project object */;
 }

@@ -19,6 +19,7 @@ class GangBookViewController: UIViewController {
     @objc func loadList(notification: NSNotification){
         DispatchQueue.main.async {
             self.tableView.reloadData()
+            print("강북")
         }
     }
     

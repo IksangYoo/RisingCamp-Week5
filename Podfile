@@ -8,4 +8,5 @@ pod 'Tabman', '~> 3.0'
 pod 'Alamofire'
 pod 'KakaoSDKNavi'
 pod 'KakaoSDKUser'
+pod 'GoogleSignIn'
 end
